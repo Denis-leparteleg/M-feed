@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopnavComponent } from './topnav/topnav.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -10,7 +10,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
   declarations: [
     AppComponent,
     TopnavComponent,
-    SidenavComponent
+    SidenavComponent,
+    routingComponents,
   ],
   imports: [
     BrowserModule,
