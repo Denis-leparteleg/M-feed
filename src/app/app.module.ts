@@ -5,6 +5,7 @@ import { AppRoutingModule, routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopnavComponent } from './topnav/topnav.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     TopnavComponent,
     SidenavComponent,
     routingComponents,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
