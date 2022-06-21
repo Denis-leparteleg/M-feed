@@ -52,24 +52,24 @@
               </div>
 
               <div class="card-body">
-                <form method="POST" action="#" class="needs-validation" novalidate="">
+                <form [formGroup]="form" (submit)="submit()" class="needs-validation" novalidate="">
                   <div class="form-group">
-                    <label for="email">Username</label>
-                    <input id="name" type="text" class="form-control" name="name" tabindex="1" required autofocus placeholder="Enter your email">
+                    <label for="username">Username</label>
+                    <input formControlName="username" id="name" type="text" class="form-control" name="username" tabindex="1" required autofocus placeholder="Enter your email">
                     <div class="invalid-feedback">
                      Enter your Username
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus placeholder="Enter your email">
+                    <input formControlName="email" id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus placeholder="Enter your email">
                     <div class="invalid-feedback">
                      Enter your email
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="email">Organisation</label>
-                    <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus placeholder="Enter your organisation name">
+                    <input formControlName="organisation" id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus placeholder="Enter your organisation name">
                     <div class="invalid-feedback">
                       Enter your organisation name
                     </div>
@@ -80,27 +80,27 @@
                       <label for="password" class="control-label">Password</label>
                       
                     </div>
-                    <input id="password" type="password" class="form-control" name="password" tabindex="2" required placeholder="Enter your password">
+                    <input formControlName="password" id="password" type="password" class="form-control" name="password" tabindex="2" required placeholder="Enter your password">
                     <div class="invalid-feedback">
                       please fill in your password
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="d-block">
-                      <label for="password" class="control-label">Confirm Password</label>
+                      <label for="cpassword" class="control-label">Confirm Password</label>
                       
                     </div>
-                    <input id="password" type="password" class="form-control" name="password" tabindex="2" required placeholder="Enter your password">
+                    <input formControlName="cpassword" id="password" type="password" class="form-control" name="cpassword" tabindex="2" required placeholder="Enter your password">
                     <div class="invalid-feedback">
                       please fill in your password
                     </div>
                   </div>
 
                   <div class="form-group">
-                    <!-- <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
                       Sign Up
-                    </button> -->
-                    <a routerLink="/" class="btn btn-primary btn-lg btn-block">Sign Up</a>
+                    </button>
+                    <!-- <a routerLink="/" class="btn btn-primary btn-lg btn-block">Sign Up</a> -->
                   </div>
                 </form>
               </div>
