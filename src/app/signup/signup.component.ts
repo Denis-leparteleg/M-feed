@@ -1,5 +1,7 @@
 import {Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
+import {HttpClient} from '@angular/common/http';
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -10,7 +12,7 @@ export class SignupComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    
+    private http:HttpClient
     ) { }
 
   ngOnInit(): void {
@@ -19,11 +21,11 @@ export class SignupComponent implements OnInit {
       email: '',
       organisation: '',
       password: '',
-      cpassword: ''
     })
   }
 
   submit(): void {
     console.log(this.form.getRawValue());
+    
   }
 }

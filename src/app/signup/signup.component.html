@@ -55,7 +55,7 @@
                 <form [formGroup]="form" (submit)="submit()" class="needs-validation" novalidate="">
                   <div class="form-group">
                     <label for="username">Username</label>
-                    <input formControlName="username" id="name" type="text" class="form-control" name="username" tabindex="1" required autofocus placeholder="Enter your email">
+                    <input formControlName="username" id="name" type="text" class="form-control" name="username" tabindex="1" required autofocus placeholder="Enter your Username">
                     <div class="invalid-feedback">
                      Enter your Username
                     </div>
@@ -69,7 +69,7 @@
                   </div>
                   <div class="form-group">
                     <label for="email">Organisation</label>
-                    <input formControlName="organisation" id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus placeholder="Enter your organisation name">
+                    <input formControlName="organisation" id="organisation" type="email" class="form-control" name="organisation" tabindex="1" required autofocus placeholder="Enter your organisation name">
                     <div class="invalid-feedback">
                       Enter your organisation name
                     </div>
@@ -90,7 +90,7 @@
                       <label for="cpassword" class="control-label">Confirm Password</label>
                       
                     </div>
-                    <input formControlName="cpassword" id="password" type="password" class="form-control" name="cpassword" tabindex="2" required placeholder="Enter your password">
+                    <input formControlName="password" id="cpassword" type="password" class="form-control" name="password" tabindex="2" required placeholder="Enter your password">
                     <div class="invalid-feedback">
                       please fill in your password
                     </div>
